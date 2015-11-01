@@ -104,7 +104,7 @@
         </autoAnswer>
         <callWaiting>3</callWaiting>
         <authName>PHONE_NUMBER</authName>
-        <authPassword>PASSWORD</authPassword>
+        <authPassword>PASSWORD_LINE_1</authPassword>
         <sharedLine>false</sharedLine>
         <messageWaitingLampPolicy>3</messageWaitingLampPolicy>
         <messagesNumber>4001</messagesNumber>
@@ -133,7 +133,7 @@
         </autoAnswer>
         <callWaiting>3</callWaiting>
         <authName>143</authName>
-        <authPassword>PASSWORD</authPassword>
+        <authPassword>PASSWORD_LINE_2</authPassword>
         <sharedLine>false</sharedLine>
         <messageWaitingLampPolicy>1</messageWaitingLampPolicy>
         <messagesNumber>4002</messagesNumber>

@@ -1,6 +1,6 @@
 <device>
   <deviceProtocol>SIP</deviceProtocol>
-  <sshUserId>root</sshUserId>
+  <sshUserId>SSH_USERNAME</sshUserId>
   <sshPassword>SSH_PASSWORD</sshPassword>
   <devicePool>
     <dateTimeSetting>

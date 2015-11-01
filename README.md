@@ -25,10 +25,10 @@ The messageWaitingLampPolicy values work like this:
  - Light Only presumably set to 6
  - None set to 7
 
-3)	Light Lamp and Display Prompt if message is waiting
+Light Lamp and Display Prompt if message is waiting - 3
 
 'Light' is the bright red lamp on the headset
 
 'Prompt' will show up a flashing voicemail envelope next to the Line on the RHS side of the display when there is voicemail
 
-3. 
+3) 

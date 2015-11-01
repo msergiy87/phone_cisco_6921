@@ -6,5 +6,5 @@ https://zadarma.com/ru/support/instructions/cisco/cisco-6921/
 But I need configure some custom settings. For example
 
 1. 
-#<preferredCodec>g729a</preferredCodec> 
-#<callStats>false</callStats> 
+\<preferredCodec>g729a</preferredCodec> 
+\<callStats>false</callStats> 

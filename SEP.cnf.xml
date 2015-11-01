@@ -104,7 +104,7 @@
         </autoAnswer>
         <callWaiting>3</callWaiting>
         <authName>PHONE_NUMBER</authName>
-        <authPassword>YUfqkrsI8COoqyoohMiZXPeT8</authPassword>
+        <authPassword>PASSWORD</authPassword>
         <sharedLine>false</sharedLine>
         <messageWaitingLampPolicy>3</messageWaitingLampPolicy>
         <messagesNumber>4001</messagesNumber>
@@ -133,7 +133,7 @@
         </autoAnswer>
         <callWaiting>3</callWaiting>
         <authName>143</authName>
-        <authPassword>PHONE_PASSWORD</authPassword>
+        <authPassword>PASSWORD</authPassword>
         <sharedLine>false</sharedLine>
         <messageWaitingLampPolicy>1</messageWaitingLampPolicy>
         <messagesNumber>4002</messagesNumber>
@@ -156,7 +156,7 @@
     <dialTemplate>dialplan.xml</dialTemplate>
   </sipProfile>
   <commonProfile>
-    <phonePassword>PASSWORD</phonePassword>
+    <phonePassword>PHONE_PASSWORD</phonePassword>
     <backgroundImageAccess>true</backgroundImageAccess>
     <callLogBlfEnabled>1</callLogBlfEnabled>
   </commonProfile>

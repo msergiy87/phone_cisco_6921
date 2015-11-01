@@ -5,7 +5,10 @@ https://zadarma.com/ru/support/instructions/cisco/cisco-6921/
 
 But I need configure some custom settings. For example
 
-1. 
+1. I used g729a codec and I need callStats for inform correct end calls
+
 \<preferredCodec>g729a\</preferredCodec>
 
 \<callStats>false\</callStats> 
+
+2.

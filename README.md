@@ -17,13 +17,13 @@ How the phone alerts the user to unread voicemail messages.
 
 The messageWaitingLampPolicy values work like this:
 
-Primary Line - Light and Prompt set to 1/
-Primary Line - Prompt Only set to 2/
-Primary Line - Light Only set to 3\
-Light and Prompt presumably set to 4\
-Prompt Only presumably set to 5\
-Light Only presumably set to 6\
-None set to 7\
+ - Primary Line - Light and Prompt set to 1/
+ - Primary Line - Prompt Only set to 2/
+ - Primary Line - Light Only set to 3\
+ - Light and Prompt presumably set to 4\
+ - Prompt Only presumably set to 5\
+ - Light Only presumably set to 6\
+ - None set to 7\
 
 'Light' is the bright red lamp on the headset\
 'Prompt' will show up a flashing voicemail envelope next to the Line on the RHS side of the display when there is voicemail\

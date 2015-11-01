@@ -5,13 +5,13 @@ https://zadarma.com/ru/support/instructions/cisco/cisco-6921/
 
 But I need configure some custom settings. For example
 
-1. I used g729a codec and I need callStats for correct end calls
+1) I used g729a codec and I need callStats for correct end calls
 
 \<preferredCodec>g729a\</preferredCodec>
 
 \<callStats>false\</callStats> 
 
-2. Set messageWaitingLampPolicy to 3
+2) Set messageWaitingLampPolicy to 3
 
 How the phone alerts the user to unread voicemail messages.
 
@@ -25,7 +25,7 @@ The messageWaitingLampPolicy values work like this:
  - Light Only presumably set to 6
  - None set to 7
 
-3	Light Lamp and Display Prompt if message is waiting
+3)	Light Lamp and Display Prompt if message is waiting
 
 'Light' is the bright red lamp on the headset
 

@@ -31,7 +31,7 @@ Light Lamp and Display Prompt if message is waiting - 3
 
 'Prompt' will show up a flashing voicemail envelope next to the Line on the RHS side of the display when there is voicemail
 
-3) I need set amount of calls phone can recive simultaneously. Otherwise it set response - busy
+3) I need set amount of calls phone can recive simultaneously. Otherwise it set response busy when have more then one calls
 
 \<maxNumCalls>4\</maxNumCalls>
 
@@ -40,4 +40,11 @@ Light Lamp and Display Prompt if message is waiting - 3
  - maxNumCalls — Defines the maximum number of calls allowed per line.
  - busyTrigger — Defines the number of calls that triggers Call Forward Busy per line on the SIP phone.
 
-4) 
+4) Configure 2-nd line with auto answer
+
+\<line button="2">
+
+\<autoAnswerEnabled>3\</autoAnswerEnabled>
+
+\<autoAnswerMode>Auto Answer with Speakerphone\</autoAnswerMode>
+

@@ -9,7 +9,7 @@ But I need configure some custom settings. For example
 
 \<preferredCodec>g729a\</preferredCodec>
 
-\<callStats>false\</callStats> 
+\<callStats>false\</callStats>
 
 2) Set messageWaitingLampPolicy to 3
 
@@ -31,4 +31,13 @@ Light Lamp and Display Prompt if message is waiting - 3
 
 'Prompt' will show up a flashing voicemail envelope next to the Line on the RHS side of the display when there is voicemail
 
-3) 
+3) I need set amount of calls phone can recive simultaneously. Otherwise it set response - busy
+
+\<maxNumCalls>4\</maxNumCalls>
+
+\<busyTrigger>2\</busyTrigger>
+
+ - maxNumCalls — Defines the maximum number of calls allowed per line.
+ - busyTrigger — Defines the number of calls that triggers Call Forward Busy per line on the SIP phone.
+
+4) 

@@ -59,12 +59,12 @@ Light Lamp and Display Prompt if message is waiting - 3
 
 \<webAccess>1\</webAccess>
 
-\<settingsAccess>1\</settingsAccess>
+\<settingsAccess>2\</settingsAccess>
 
  - sshAccess - 1 - disabled. For enable set 0
  - webAccess - 1 - disabled. For enable set 0
  - settingsAccess - Enables and disables the Settings button on an IP phone.
- - 0 = Disabled.
- - 1 = Enabled (default). The phone user can modify features by using the Settings menu.
- - 2 = Restricted. The phone user is allowed to access User Preferences and volume settings only. 
+   0 = Disabled.
+   1 = Enabled (default). The phone user can modify features by using the Settings menu.
+   2 = Restricted. The phone user is allowed to access User Preferences and volume settings only. 
 

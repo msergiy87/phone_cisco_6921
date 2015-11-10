@@ -42,9 +42,29 @@ Light Lamp and Display Prompt if message is waiting - 3
 
 4) Configure 2-nd line with auto answer
 
+<autoAnswerTimer>1</autoAnswerTimer>
+
 \<line button="2">
 
 \<autoAnswerEnabled>3\</autoAnswerEnabled>
 
 \<autoAnswerMode>Auto Answer with Speakerphone\</autoAnswerMode>
+
+ - autoAnswerEnabled - 3 - enable auto answer
+ - autoAnswerTimer - Seconds to wait before automatically answering the call for lines with <autoAnswerEnabled /> set to 1. Set to 10 sec - 3 calls
+
+5) Configure access
+
+\<sshAccess>1\</sshAccess>
+
+\<webAccess>1\</webAccess>
+
+\<settingsAccess>1\</settingsAccess>
+
+ - sshAccess - 1 - disabled. For enable set 0
+ - webAccess - 1 - disabled. For enable set 0
+ - settingsAccess - Enables and disables the Settings button on an IP phone.
+ - 0 = Disabled.
+ - 1 = Enabled (default). The phone user can modify features by using the Settings menu.
+ - 2 = Restricted. The phone user is allowed to access User Preferences and volume settings only. 
 

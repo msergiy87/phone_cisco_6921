@@ -10,7 +10,7 @@ http://www.voip-info.org/wiki/view/Asterisk+phone+cisco+7970+SIP
 
 But I need configure some custom settings. For example
 
-1) I used g729a codec and I need callStats for correct end calls
+#1) I used g729a codec and I need callStats for correct end calls#
 
 \<preferredCodec>g729a\</preferredCodec>
 

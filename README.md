@@ -12,8 +12,8 @@ But I need configure some custom settings. For example
 
 ### 1) I used g729a codec and I need callStats for correct end calls
 ```
-\<preferredCodec>g729a\</preferredCodec>
-\<callStats>true\</callStats>
+<preferredCodec>g729a</preferredCodec>
+<callStats>true</callStats>
 ```
  - CallStats refer to if the phone feeds back call quality statistics to the SIP server when the call is terminated.
 

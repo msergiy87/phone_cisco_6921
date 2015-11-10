@@ -3,6 +3,11 @@ I have used configuration the same as in foloving sites:
 https://github.com/amooma/GS3/wiki/Cisco-CP-69xx-VoIP-Telefone-mit-Asterisk-Gemeinschaft
 https://zadarma.com/ru/support/instructions/cisco/cisco-6921/
 
+And get parameters from this pages
+
+http://www.voip-info.org/wiki/view/Asterisk+phone+cisco+79x1+xml+configuration+files+for+SIP
+http://www.voip-info.org/wiki/view/Asterisk+phone+cisco+7970+SIP
+
 But I need configure some custom settings. For example
 
 1) I used g729a codec and I need callStats for correct end calls
@@ -57,6 +62,8 @@ Light Lamp and Display Prompt if message is waiting - 3
 
 \<sshAccess>1\</sshAccess>
 
+\<sshPort>22\</sshPort>
+
 \<webAccess>1\</webAccess>
 
 \<settingsAccess>2\</settingsAccess>
@@ -71,3 +78,40 @@ Light Lamp and Display Prompt if message is waiting - 3
    
    2 = Restricted. The phone user is allowed to access User Preferences and volume settings only. 
 
+6) Set minimal ring volume. Maximum 15.
+
+\<minimumRingVolume>10\</minimumRingVolume>
+
+ - minimumRingVolume - Minimum volume of the phone's ringer. A number between 0 (off) to 15 (full).
+
+7) Set transport protocol. As I'm using not relable network infrastructure I use TCP for transport. As you can, use UDP, it faster
+
+\<transportLayerProtocol>4\</transportLayerProtocol>
+
+ - transportLayerProtocol - what protocol the phone will use to connect to Asterisk (UDP, TCP). Only use 4 (TCP), as the phone causes SIP retransmit errors when using UDP.
+
+   1	Use device default	
+
+   2	UDP	
+
+   4	TCP
+   
+8) Disable DND
+
+\<dndCallAlert>0\</dndCallAlert>
+
+\<dndReminderTimer>5\</dndReminderTimer>
+
+ - dndCallAlert - How the phone displays an incoming call when DND is enabled and dndbusy is set to no in sip.conf.
+
+   0	Disable
+   
+   1	Beep Only
+   
+   5	Flash Only
+
+ - dndReminderTimer - How often in minutes to play a beep tone through the speaker when DND is enabled.
+
+9) Set folder, the web server documentroot, where you store phonebook xml file
+
+\<directoryURL>http://ASTERISK_SERVER_IP/phonebook.xml\</directoryURL>

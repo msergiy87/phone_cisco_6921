@@ -3,7 +3,7 @@ I have used configuration the same as in foloving sites:
 https://github.com/amooma/GS3/wiki/Cisco-CP-69xx-VoIP-Telefone-mit-Asterisk-Gemeinschaft
 https://zadarma.com/ru/support/instructions/cisco/cisco-6921/
 
-And get parameters from this pages
+And get parameters explanations from this pages
 
 http://www.voip-info.org/wiki/view/Asterisk+phone+cisco+79x1+xml+configuration+files+for+SIP
 http://www.voip-info.org/wiki/view/Asterisk+phone+cisco+7970+SIP
@@ -14,23 +14,17 @@ But I need configure some custom settings. For example
 
 \<preferredCodec>g729a\</preferredCodec>
 
-\<callStats>false\</callStats>
+\<callStats>true\</callStats>
 
-2) Set messageWaitingLampPolicy to 3
+ - CallStats refer to if the phone feeds back call quality statistics to the SIP server when the call is terminated.
+
+2) Set only light signal when you have unread messages. Without Prompt.
+
+\<messageWaitingLampPolicy>3\</messageWaitingLampPolicy>
 
 How the phone alerts the user to unread voicemail messages.
 
-The messageWaitingLampPolicy values work like this:
-
- - Primary Line - Light and Prompt set to 1
- - Primary Line - Prompt Only set to 2
- - Primary Line - Light Only set to 3
- - Light and Prompt presumably set to 4
- - Prompt Only presumably set to 5
- - Light Only presumably set to 6
- - None set to 7
-
-Light Lamp and Display Prompt if message is waiting - 3
+ - 3 - Light Lamp and Display Prompt if message is waiting
 
 'Light' is the bright red lamp on the headset
 

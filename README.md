@@ -6,10 +6,10 @@ I have used configuration the same as in foloving sites:
 (https://zadarma.com/ru/support/instructions/cisco/cisco-6921/)
 
 And get parameters explanations from this pages:
-```
+
 (http://www.voip-info.org/wiki/view/Asterisk+phone+cisco+79x1+xml+configuration+files+for+SIP)
 (http://www.voip-info.org/wiki/view/Asterisk+phone+cisco+7970+SIP)
-```
+
 But I need configure some custom settings. For example:
 
 ##### 1) I used g729a codec and I need callStats for correct end calls.

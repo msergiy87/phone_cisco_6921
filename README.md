@@ -1,16 +1,16 @@
 #### SEP.cnf.xml
 
 I have used configuration the same as in foloving sites:
-
+```
 https://github.com/amooma/GS3/wiki/Cisco-CP-69xx-VoIP-Telefone-mit-Asterisk-Gemeinschaft
 https://zadarma.com/ru/support/instructions/cisco/cisco-6921/
-
-And get parameters explanations from this pages
-
+```
+And get parameters explanations from this pages:
+```
 http://www.voip-info.org/wiki/view/Asterisk+phone+cisco+79x1+xml+configuration+files+for+SIP
 http://www.voip-info.org/wiki/view/Asterisk+phone+cisco+7970+SIP
-
-But I need configure some custom settings. For example
+```
+But I need configure some custom settings. For example:
 
 ##### 1) I used g729a codec and I need callStats for correct end calls
 ```
@@ -19,13 +19,13 @@ But I need configure some custom settings. For example
 ```
  - CallStats refer to if the phone feeds back call quality statistics to the SIP server when the call is terminated.
 
-##### 2) Set only light signal when you have unread messages. Without Prompt
+##### 2) Set only 'Light' and 'Prompt' signal when you have unread messages. Without stutter
 ```
 <messageWaitingLampPolicy>3</messageWaitingLampPolicy>
 ```
 How the phone alerts the user to unread voicemail messages.
 
- - 3 - Light Lamp and Display Prompt if message is waiting
+ - messageWaitingLampPolicy - 3 - Light Lamp and Display Prompt if message is waiting
 
 'Light' is the bright red lamp on the headset
 

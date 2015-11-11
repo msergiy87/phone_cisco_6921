@@ -7,6 +7,7 @@ I have used configuration the same as in foloving sites:
 
 And get parameters explanations from this pages:
 
+(http://docs.acsdata.co.nz/asterisk-cisco/sepmac-cnf-xml.shtml)
 (http://www.voip-info.org/wiki/view/Asterisk+phone+cisco+79x1+xml+configuration+files+for+SIP)
 (http://www.voip-info.org/wiki/view/Asterisk+phone+cisco+7970+SIP)
 

@@ -1,10 +1,10 @@
 #### SEP.cnf.xml
 
 I have used configuration the same as in foloving sites:
-```
-https://github.com/amooma/GS3/wiki/Cisco-CP-69xx-VoIP-Telefone-mit-Asterisk-Gemeinschaft
-https://zadarma.com/ru/support/instructions/cisco/cisco-6921/
-```
+
+(https://github.com/amooma/GS3/wiki/Cisco-CP-69xx-VoIP-Telefone-mit-Asterisk-Gemeinschaft)
+(https://zadarma.com/ru/support/instructions/cisco/cisco-6921/)
+
 And get parameters explanations from this pages:
 ```
 http://www.voip-info.org/wiki/view/Asterisk+phone+cisco+79x1+xml+configuration+files+for+SIP

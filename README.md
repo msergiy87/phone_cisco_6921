@@ -12,26 +12,24 @@ http://www.voip-info.org/wiki/view/Asterisk+phone+cisco+7970+SIP
 ```
 But I need configure some custom settings. For example:
 
-##### 1) I used g729a codec and I need callStats for correct end calls
+##### 1) I used g729a codec and I need callStats for correct end calls.
 ```
 <preferredCodec>g729a</preferredCodec>
 <callStats>true</callStats>
 ```
  - CallStats refer to if the phone feeds back call quality statistics to the SIP server when the call is terminated.
 
-##### 2) Set only 'Light' and 'Prompt' signal when you have unread messages. Without stutter
+##### 2) How the phone alerts the user to unread voicemail messages. Set only 'Light' and 'Prompt' signal when you have unread messages. Without stutter.
 ```
 <messageWaitingLampPolicy>3</messageWaitingLampPolicy>
 ```
-How the phone alerts the user to unread voicemail messages.
+ - messageWaitingLampPolicy - 3 - Light Lamp and Display Prompt if message is waiting.
 
- - messageWaitingLampPolicy - 3 - Light Lamp and Display Prompt if message is waiting
+'Light' is the bright red lamp on the headset.
 
-'Light' is the bright red lamp on the headset
+'Prompt' will show up a flashing voicemail envelope next to the Line on the RHS side of the display when there is voicemail.
 
-'Prompt' will show up a flashing voicemail envelope next to the Line on the RHS side of the display when there is voicemail
-
-##### 3) I need set amount of calls phone can recive simultaneously. Otherwise it set response busy when have more then one calls
+##### 3) I need set amount of calls phone can recive simultaneously. Otherwise it set response busy when have more then one calls.
 ```
 <maxNumCalls>4</maxNumCalls>
 <busyTrigger>2</busyTrigger>
@@ -39,7 +37,7 @@ How the phone alerts the user to unread voicemail messages.
  - maxNumCalls — Defines the maximum number of calls allowed per line.
  - busyTrigger — Defines the number of calls that triggers Call Forward Busy per line on the SIP phone.
 
-##### 4) Configure 2-nd line with auto answer
+##### 4) Configure 2-nd line with auto answer.
 ```
 <autoAnswerTimer>1</autoAnswerTimer>
 
@@ -47,18 +45,19 @@ How the phone alerts the user to unread voicemail messages.
 <autoAnswerEnabled>3</autoAnswerEnabled>
 <autoAnswerMode>Auto Answer with Speakerphone</autoAnswerMode>
 ```
- - autoAnswerEnabled - 3 - enable auto answer
- - autoAnswerTimer - Seconds to wait before automatically answering the call for lines with <autoAnswerEnabled /> set to 1. Set to 10 sec - 3 calls
+ - autoAnswerEnabled - 3 - enable auto answer.
+ - autoAnswerTimer - Seconds to wait before automatically answering the call for lines with <autoAnswerEnabled /> set to 1. Set to 10 sec - 3 calls.
 
-##### 5) Configure access
+##### 5) Configure access.
 ```
+<settingsAccess>2</settingsAccess>
+
 <sshAccess>1</sshAccess>
 <sshPort>22</sshPort>
 <webAccess>1</webAccess>
-<settingsAccess>2</settingsAccess>
 ```
- - sshAccess - 1 - disabled. For enable set 0
- - webAccess - 1 - disabled. For enable set 0
+ - sshAccess - 1 - disabled. For enable set 0.
+ - webAccess - 1 - disabled. For enable set 0.
  - settingsAccess - Enables and disables the Settings button on an IP phone.
 
    0 = Disabled.
@@ -67,40 +66,40 @@ How the phone alerts the user to unread voicemail messages.
    
    2 = Restricted. The phone user is allowed to access User Preferences and volume settings only. 
 
-##### 6) Set minimal ring volume. Maximum 15
+##### 6) Set minimal ring volume. Maximum is 15.
 ```
 <minimumRingVolume>10</minimumRingVolume>
 ```
  - minimumRingVolume - Minimum volume of the phone's ringer. A number between 0 (off) to 15 (full).
 
-##### 7) Set transport protocol. As I'm using not relable network infrastructure I use TCP for transport. As you can, use UDP, it faster
+##### 7) Set folder, the web server documentroot, where you store phonebook xml file
+```
+<directoryURL>http://ASTERISK_SERVER_IP/phonebook.xml</directoryURL>
+```
+
+##### 8) Set transport protocol. As I'm using not relable network infrastructure so I use TCP for transport. As you can, use UDP, it faster.
 ```
 <transportLayerProtocol>4</transportLayerProtocol>
 ```
  - transportLayerProtocol - what protocol the phone will use to connect to Asterisk (UDP, TCP). Only use 4 (TCP), as the phone causes SIP retransmit errors when using UDP.
 
-   1	Use device default	
+   1 =	Use device default	
 
-   2	UDP	
+   2 =	UDP	
 
-   4	TCP
+   4 =	TCP
    
-##### 8) Disable DND
+##### 9) Disable DND.
 ```
 <dndCallAlert>0</dndCallAlert>
 <dndReminderTimer>5</dndReminderTimer>
 ```
  - dndCallAlert - How the phone displays an incoming call when DND is enabled and dndbusy is set to no in sip.conf.
 
-   0	Disable
+   0 =	Disable
    
-   1	Beep Only
+   1 =	Beep Only
    
-   5	Flash Only
+   5 =	Flash Only
 
  - dndReminderTimer - How often in minutes to play a beep tone through the speaker when DND is enabled.
-
-##### 9) Set folder, the web server documentroot, where you store phonebook xml file
-```
-<directoryURL>http://ASTERISK_SERVER_IP/phonebook.xml</directoryURL>
-```

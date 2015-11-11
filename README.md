@@ -38,8 +38,8 @@ But I need configure some custom settings. For example:
 <maxNumCalls>4</maxNumCalls>
 <busyTrigger>2</busyTrigger>
 ```
- - maxNumCalls — Defines the maximum number of calls allowed per line.
- - busyTrigger — Defines the number of calls that triggers Call Forward Busy per line on the SIP phone.
+ - maxNumCalls - defines the maximum number of calls allowed per line.
+ - busyTrigger - defines the number of calls that triggers Call Forward Busy per line on the SIP phone.
 
 ##### 4) Configure 2-nd line with auto answer.
 ```
@@ -50,7 +50,7 @@ But I need configure some custom settings. For example:
 <autoAnswerMode>Auto Answer with Speakerphone</autoAnswerMode>
 ```
  - autoAnswerEnabled - 3 - enable auto answer.
- - autoAnswerTimer - Seconds to wait before automatically answering the call for lines with <autoAnswerEnabled /> set to 1. Set to 10 sec - 3 calls.
+ - autoAnswerTimer - seconds to wait before automatically answering the call for lines. Set to 10 sec - 3 calls.
 
 ##### 5) Configure access.
 ```
@@ -60,9 +60,9 @@ But I need configure some custom settings. For example:
 <sshPort>22</sshPort>
 <webAccess>1</webAccess>
 ```
- - sshAccess - 1 - disabled. For enable set 0.
- - webAccess - 1 - disabled. For enable set 0.
- - settingsAccess - Enables and disables the Settings button on an IP phone.
+ - sshAccess - 1 - disabled. For enable set 0. Restricts access to the phone's ssh-server.
+ - webAccess - 1 - disabled. For enable set 0. Restricts access to the phone's web-server.
+ - settingsAccess - enables and disables the Settings button on an IP phone. Useful to lock the phone config down.
 
    0 = Disabled.
 
@@ -74,9 +74,9 @@ But I need configure some custom settings. For example:
 ```
 <minimumRingVolume>10</minimumRingVolume>
 ```
- - minimumRingVolume - Minimum volume of the phone's ringer. A number between 0 (off) to 15 (full).
+ - minimumRingVolume - minimum volume of the phone's ringer. A number between 0 (off) to 15 (full).
 
-##### 7) Set folder, the web server documentroot, where you store phonebook xml file
+##### 7) URL to use when the directories or contacts key is pressed. Set folder, the web server documentroot, where you store phonebook xml file.
 ```
 <directoryURL>http://ASTERISK_SERVER_IP/phonebook.xml</directoryURL>
 ```
@@ -98,7 +98,7 @@ But I need configure some custom settings. For example:
 <dndCallAlert>0</dndCallAlert>
 <dndReminderTimer>5</dndReminderTimer>
 ```
- - dndCallAlert - How the phone displays an incoming call when DND is enabled and dndbusy is set to no in sip.conf.
+ - dndCallAlert - how the phone displays an incoming call when DND is enabled and dndbusy is set to no in sip.conf.
 
    0 =	Disable
    
@@ -106,4 +106,4 @@ But I need configure some custom settings. For example:
    
    5 =	Flash Only
 
- - dndReminderTimer - How often in minutes to play a beep tone through the speaker when DND is enabled.
+ - dndReminderTimer - how often in minutes to play a beep tone through the speaker when DND is enabled.

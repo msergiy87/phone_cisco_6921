@@ -1,6 +1,6 @@
 #### SEP.cnf.xml
 
-I have used configuration the same as in foloving sites:
+I used configuration the same as in following sites:
 
 (https://github.com/amooma/GS3/wiki/Cisco-CP-69xx-VoIP-Telefone-mit-Asterisk-Gemeinschaft) 
 
@@ -33,7 +33,7 @@ But I need configure some custom settings. For example:
 
 'Prompt' will show up a flashing voicemail envelope next to the Line on the RHS side of the display when there is voicemail.
 
-##### 3) I need set amount of calls phone can recive simultaneously. Otherwise it set response busy when have more then one calls.
+##### 3) I need set amount of calls that phone can recive simultaneously. Otherwise it set response busy when have more then one calls.
 ```
 <maxNumCalls>4</maxNumCalls>
 <busyTrigger>2</busyTrigger>
@@ -41,7 +41,7 @@ But I need configure some custom settings. For example:
  - maxNumCalls - defines the maximum number of calls allowed per line.
  - busyTrigger - defines the number of calls that triggers Call Forward Busy per line on the SIP phone.
 
-##### 4) Configure 2-nd line with auto answer.
+##### 4) Configure 2-nd line with auto answer for conference.
 ```
 <autoAnswerTimer>1</autoAnswerTimer>
 
@@ -76,12 +76,12 @@ But I need configure some custom settings. For example:
 ```
  - minimumRingVolume - minimum volume of the phone's ringer. A number between 0 (off) to 15 (full).
 
-##### 7) URL to use when the directories or contacts key is pressed. Set folder, the web server documentroot, where you store phonebook xml file.
+##### 7) URL to use when the directories or contacts key is pressed. Set folder, the web server DocumentRoot, where you store phonebook xml file.
 ```
 <directoryURL>http://ASTERISK_SERVER_IP/phonebook.xml</directoryURL>
 ```
 
-##### 8) Set transport protocol. As I'm using not relable network infrastructure so I use TCP for transport. As you can, use UDP, it faster.
+##### 8) Set transport protocol. As I'm using not reliable network infrastructure, so I use TCP for transport. As you can, use UDP, it faster.
 ```
 <transportLayerProtocol>4</transportLayerProtocol>
 ```

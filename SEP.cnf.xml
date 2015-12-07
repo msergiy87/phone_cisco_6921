@@ -136,7 +136,7 @@
         <authPassword>LINE_2_PASSWORD</authPassword>
         <sharedLine>false</sharedLine>
         <messageWaitingLampPolicy>1</messageWaitingLampPolicy>
-        <messagesNumber>4002</messagesNumber>
+        <messagesNumber>VOICEMAIL_NUMBER</messagesNumber>
         <ringSettingIdle>4</ringSettingIdle>
         <ringSettingActive>5</ringSettingActive>
         <contact>LINE_2_PHONE_NUMBER</contact>

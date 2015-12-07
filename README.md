@@ -76,7 +76,7 @@ But I need configure some custom settings. For example:
 ```
  - minimumRingVolume - minimum volume of the phone's ringer. A number between 0 (off) to 15 (full).
 
-##### 7) URL to use when the directories or contacts key is pressed. Set folder, the web server DocumentRoot, where you store phonebook xml file.
+##### 7) URL to use when the directories or contacts key is pressed. If necessary, set folder, where you store phonebook xml file.
 ```
 <directoryURL>http://ASTERISK_SERVER_IP/phonebook.xml</directoryURL>
 ```

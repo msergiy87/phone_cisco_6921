@@ -1,4 +1,4 @@
-#### SEP.cnf.xml
+#### SEP.cnf.xml for Cisco CP-6921
 
 I used configuration the same as in following sites:
 

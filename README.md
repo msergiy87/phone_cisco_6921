@@ -85,9 +85,10 @@ You can use another number for each line. And can use it for speed dial.
 ```
  - minimumRingVolume - minimum volume of the phone's ringer. A number between 0 (off) to 15 (full).
 
-##### 8) Configure userLocale settings. You will have native language message on the phone display. More here (http://docs.acsdata.co.nz/asterisk-cisco/user-locale.shtml)
+##### 8) Configure userLocale fnd networkLocale settings. You will have native language message on the phone display. The Network locales allows the phone to play tones (ringing, busy etc.) native to the phone's country. More here (http://docs.acsdata.co.nz/asterisk-cisco/user-locale.shtml), (http://docs.acsdata.co.nz/asterisk-cisco/network-locale.shtml)
 ```
 <userLocale>
+<networkLocale>
 ```
 
 ##### 9) URL to use when the directories or contacts key is pressed. If necessary, set folder, where you store phonebook xml file.

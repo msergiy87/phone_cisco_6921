@@ -46,13 +46,22 @@ But I need configure some custom settings. For example:
 <autoAnswerTimer>1</autoAnswerTimer>
 
 <line button="2">
+<featureID>9</featureID>
+
 <autoAnswerEnabled>3</autoAnswerEnabled>
 <autoAnswerMode>Auto Answer with Speakerphone</autoAnswerMode>
 ```
- - autoAnswerEnabled - 3 - enable auto answer.
  - autoAnswerTimer - seconds to wait before automatically answering the call for lines. Set to 10 sec - 3 calls.
+ - featureID - Number determining which feature is assigned to this line key. More here (http://docs.acsdata.co.nz/asterisk-cisco/line-keys-xml.shtml)
+ - autoAnswerEnabled - 3 - enable auto answer.
 
-##### 5) Configure access.
+##### 5) Configure number to dial when the messages key is pressed.
+```
+<messagesNumber>VOICEMAIL_NUMBER</messagesNumber>
+```
+You can use another number for each line. And can use it for speed dial.
+
+##### 6) Configure access.
 ```
 <settingsAccess>2</settingsAccess>
 
@@ -70,18 +79,23 @@ But I need configure some custom settings. For example:
    
    2 = Restricted. The phone user is allowed to access User Preferences and volume settings only. 
 
-##### 6) Set minimal ring volume. Maximum is 15.
+##### 7) Set minimal ring volume. Maximum is 15.
 ```
 <minimumRingVolume>10</minimumRingVolume>
 ```
  - minimumRingVolume - minimum volume of the phone's ringer. A number between 0 (off) to 15 (full).
 
-##### 7) URL to use when the directories or contacts key is pressed. If necessary, set folder, where you store phonebook xml file.
+##### 8) Configure userLocale settings. You will have native language message on the phone display. More here (http://docs.acsdata.co.nz/asterisk-cisco/user-locale.shtml)
+```
+<userLocale>
+```
+
+##### 9) URL to use when the directories or contacts key is pressed. If necessary, set folder, where you store phonebook xml file.
 ```
 <directoryURL>http://ASTERISK_SERVER_IP/phonebook.xml</directoryURL>
 ```
 
-##### 8) Set transport protocol. As I'm using not reliable network infrastructure, so I use TCP for transport. As you can, use UDP, it faster.
+##### 10) Set transport protocol. As I'm using not reliable network infrastructure, so I use TCP for transport. As you can, use UDP, it faster.
 ```
 <transportLayerProtocol>4</transportLayerProtocol>
 ```
@@ -93,7 +107,7 @@ But I need configure some custom settings. For example:
 
    4 =	TCP
    
-##### 9) Disable DND.
+##### 11) Disable DND.
 ```
 <dndCallAlert>0</dndCallAlert>
 <dndReminderTimer>5</dndReminderTimer>

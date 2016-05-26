@@ -1,6 +1,6 @@
 #### SEP.cnf.xml for Cisco CP-6921
 
-The main configuration file for the phone. The actual name of the file is based on the MAC address of the phone, eg: SEP58971ECC97C1.cnf.xml (SEP<MAC>.cnf.xml).
+The main configuration file for the phone. The actual name of the file is based on the MAC address of the phone, eg: SEP58971ECC97C1.cnf.xml (SEP\<MAC\>.cnf.xml).
 
 I used configuration the same as in following sites:
 

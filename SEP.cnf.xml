@@ -95,7 +95,7 @@
       <line button="1">
         <featureID>9</featureID>
         <featureLabel>LINE_1_PHONE_NUMBER</featureLabel>
-        <proxy>USECALLMANAGER</proxy>
+        <proxy>USECALLMANAGER OR_ASTERISK_SERVER_IP_1_OR_2</proxy>
         <port>5060</port>
         <name>LINE_1_PHONE_NUMBER</name>
         <displayName>LINE_1_PHONE_NUMBER</displayName>

@@ -124,5 +124,13 @@ You can use another number for each line. And can use it for speed dial.
    5 =	Flash Only
 
  - dndReminderTimer - how often in minutes to play a beep tone through the speaker when DND is enabled.
+ 
+##### 12) Register first line to first server and second line to second server.
+```
+<line button="2">
+ 
+<processNodeName>ASTERISK_SERVER_IP_2</processNodeName>
+<proxy>ASTERISK_SERVER_IP_2</proxy>
+```
 
 ![6921](https://github.com/msergiy87/phone_cisco_6921/blob/master/6921.jpg)
